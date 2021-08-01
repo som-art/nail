@@ -1,0 +1,565 @@
+.gradient-text {
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.spin {
+  position: absolute;
+  animation-name: spin;
+  animation-duration: 2000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+  to {
+    transform: rotate(360deg);
+    transform-origin: 50% 50%;
+  }
+}
+
+.spin1 {
+  position: absolute;
+  animation-name: spin1;
+  animation-duration: 1000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-delay: 3s;
+}
+@keyframes spin1 {
+  from {
+    transform: rotate(0deg) scale(0);
+    opacity: 0;
+    filter: blur(20px);
+
+    transform-origin: 50% 50%;
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+    opacity: 1;
+    filter: blur(0px);
+
+    transform-origin: 50% 50%;
+  }
+}
+
+.slide {
+  position: absolute;
+  animation-name: slide;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes slide {
+  from {
+    transform: translate(-700px, -800px);
+    transform-origin: 50% 50%;
+  }
+}
+
+.slide1 {
+  position: absolute;
+  animation-name: slide1;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes slide1 {
+  from {
+    transform: translate(900px, -800px);
+    transform-origin: 50% 50%;
+  }
+}
+
+.slide2 {
+  position: absolute;
+  animation-name: slide2;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes slide2 {
+  from {
+    transform: translate(-900px, 0px);
+    transform-origin: 50% 50%;
+  }
+}
+
+.slide3 {
+  position: absolute;
+  animation-name: slide3;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes slide3 {
+  from {
+    transform: translate(900px, 0px);
+    transform-origin: 50% 50%;
+  }
+}
+
+.slide4 {
+  position: absolute;
+  animation-name: slide4;
+  animation-duration: 3000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+@keyframes slide4 {
+  from {
+    transform: translate(0px, 700px);
+    transform-origin: 50% 50%;
+  }
+}
+
+.floatingy {
+  animation-name: floatingy;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes floatingy {
+  0% {
+    transform: translate(0, 0px);
+  }
+  25% {
+    transform: translate(0, 20px);
+  }
+  50% {
+    transform: translate(0, 5px);
+  }
+  75% {
+    transform: translate(0, 25px);
+  }
+  100% {
+    transform: translate(0, 0px);
+  }
+}
+.floating {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0px, 0);
+  }
+  25% {
+    transform: translate(-5px, 0);
+  }
+  50% {
+    transform: translate(3px, 0);
+  }
+  75% {
+    transform: translate(8px, 0);
+  }
+  100% {
+    transform: translate(0px, 0);
+  }
+}
+.bounce {
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  overflow: hidden;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-10%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+
+.switch {
+  animation-name: switch;
+  animation-duration: 4500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.switch1 {
+  animation-name: switch1;
+  animation-duration: 5500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch1 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch2 {
+  animation-name: switch2;
+  animation-duration: 6000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch2 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch3 {
+  animation-name: switch3;
+  animation-duration: 6500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch3 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch4 {
+  animation-name: switch4;
+  animation-duration: 7000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch4 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch5 {
+  animation-name: switch5;
+  animation-duration: 7500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch5 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch6 {
+  animation-name: switch6;
+  animation-duration: 8000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch6 {
+  0% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch7 {
+  animation-name: switch7;
+  animation-duration: 8500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch7 {
+  0% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch8 {
+  animation-name: switch8;
+  animation-duration: 9000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch8 {
+  0% {
+    opacity: 0;
+  }
+  62% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch9 {
+  animation-name: switch9;
+  animation-duration: 9500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch9 {
+  0% {
+    opacity: 0;
+  }
+  63% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch10 {
+  animation-name: switch10;
+  animation-duration: 10000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch10 {
+  0% {
+    opacity: 0;
+  }
+  64% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.switch11 {
+  animation-name: switch11;
+  animation-duration: 10500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+}
+@keyframes switch11 {
+  0% {
+    opacity: 0;
+  }
+  66% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.slideUp {
+  animation: slideUp 11s 1 ease-in-out;
+}
+@keyframes slideUp {
+  0% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.animateGradient {
+  background: linear-gradient(
+    -35deg,
+    #740483,
+    #4097fa,
+    #4b37ff,
+    #29fd93,
+    #ffd727,
+    #ffb01e,
+    red
+  );
+  background-size: 800% 800%;
+  animation-name: animateGradient;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform-origin: 50% 50%;
+}
+@keyframes animateGradient {
+  0% {
+    background-position: 20% 100%;
+    transform: scaleX(0.3);
+  }
+  25% {
+    background-position: 100% 100%;
+    transform: scaleX(0.5);
+  }
+
+  100% {
+    background-position: 30% 100%;
+    transform: scaleX(1);
+  }
+}
+.animateGradient1 {
+  background: linear-gradient(
+    -35deg,
+    #740483,
+    #4097fa,
+    #4b37ff,
+    #29fd93,
+    #ffd727,
+    #ffb01e,
+    red
+  );
+  background-size: 500% 800%;
+  animation-name: animateGradient1;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animateGradient1 {
+  0% {
+    background-position: 10% 100%;
+    transform: scaleX(0.5);
+  }
+  25% {
+    background-position: 100% 100%;
+    transform: scaleX(0.7);
+  }
+
+  100% {
+    background-position: 10% 100%;
+    transform: scaleX(1.5);
+  }
+}
+.animateGradient2 {
+  background: linear-gradient(
+    -35deg,
+    #740483,
+    #4097fa,
+    #4b37ff,
+    #29fd93,
+    #ffd727,
+    #ffb01e,
+    red
+  );
+  background-size: 500% 800%;
+  animation-name: animateGradient2;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animateGradient2 {
+  0% {
+    background-position: 100% 30%;
+    transform: scaleY(0.5);
+  }
+  25% {
+    background-position: 100% 100%;
+    transform: scaleY(0.7);
+  }
+
+  100% {
+    background-position: 100% 10%;
+    transform: scaleY(1);
+  }
+}
+.animateGradient3 {
+  background: linear-gradient(
+    -35deg,
+    #740483,
+    #4097fa,
+    #4b37ff,
+    #29fd93,
+    #ffd727,
+    #ffb01e,
+    red
+  );
+  background-size: 500% 800%;
+  animation-name: animateGradient3;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animateGradient3 {
+  0% {
+    background-position: 100% 10%;
+    transform: scaleY(0.3);
+  }
+  25% {
+    background-position: 100% 100%;
+    transform: scaleY(0.5);
+  }
+
+  100% {
+    background-position: 100% 60%;
+    transform: scaleY(1);
+  }
+}
+.bgGrad {
+  background-image: radial-gradient(
+    circle,
+    rgb(3, 3, 56),
+    rgb(9, 9, 51),
+    rgb(3, 3, 34)
+  );
+}
